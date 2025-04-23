@@ -70,6 +70,7 @@ public class DashboardFormController {
 
     @FXML
     void btnPaymentOnAction(ActionEvent event) {
+        navigateTo("/view/PaymentForm.fxml");
 
     }
 

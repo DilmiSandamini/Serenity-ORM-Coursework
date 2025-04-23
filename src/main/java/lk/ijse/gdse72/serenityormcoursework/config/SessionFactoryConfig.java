@@ -18,7 +18,7 @@ public class SessionFactoryConfig {
                     .addAnnotatedClass(Patient.class);
 //                    .addAnnotatedClass(Payment.class)
 //                    .addAnnotatedClass(Appointment.class)
-//                    .addAnnotatedClass(Therapist.class)
+             //       .addAnnotatedClass(Therapist.class);
 //                    .addAnnotatedClass(TherapyPrograms.class);
 //                    .addAnnotatedClass(TherapySession.class);
 

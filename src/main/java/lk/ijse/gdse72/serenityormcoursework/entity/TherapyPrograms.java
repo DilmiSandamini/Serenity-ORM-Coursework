@@ -1,13 +1,12 @@
 package lk.ijse.gdse72.serenityormcoursework.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -18,8 +17,14 @@ import lombok.Setter;
 public class TherapyPrograms {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int ProgramID;
-    private String ProgramName;
+    private int programID;
+
+    private String programName;
     private String programDuration;
+
+    @Column(precision = 10, scale = 2)
     private double programFee;
+
+    @OneToMany(mappedBy = "program", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Payment> payments;
 }

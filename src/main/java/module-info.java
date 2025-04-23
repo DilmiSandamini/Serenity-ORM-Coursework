@@ -10,6 +10,7 @@ module lk.ijse.gdse.serenityormcoursework {
     requires java.naming;
 
 
+
     opens lk.ijse.gdse72.serenityormcoursework.controller to javafx.fxml;
     opens lk.ijse.gdse72.serenityormcoursework.tm to javafx.base;
     opens lk.ijse.gdse72.serenityormcoursework.entity to org.hibernate.orm.core;

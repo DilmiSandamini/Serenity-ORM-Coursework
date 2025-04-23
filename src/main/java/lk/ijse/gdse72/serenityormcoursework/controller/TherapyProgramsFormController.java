@@ -36,16 +36,16 @@ public class TherapyProgramsFormController implements Initializable {
     private JFXButton btnUpdate;
 
     @FXML
-    private TableColumn<?, ?> colDuration;
+    private TableColumn<TherapyProgramsTM , String> colDuration;
 
     @FXML
-    private TableColumn<?, ?> colFee;
+    private TableColumn<TherapyProgramsTM , String> colFee;
 
     @FXML
-    private TableColumn<?, ?> colProgramId;
+    private TableColumn<TherapyProgramsTM , String> colProgramId;
 
     @FXML
-    private TableColumn<?, ?> colProgramName;
+    private TableColumn<TherapyProgramsTM , String> colProgramName;
 
     @FXML
     private Label lblProgramId;

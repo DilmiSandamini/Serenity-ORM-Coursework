@@ -2,6 +2,7 @@ package lk.ijse.gdse72.serenityormcoursework.dao;
 
 import lk.ijse.gdse72.serenityormcoursework.dao.custom.impl.PatientDAOImpl;
 import lk.ijse.gdse72.serenityormcoursework.dao.custom.impl.TherapyProgramsDAOImpl;
+import lk.ijse.gdse72.serenityormcoursework.dao.custom.impl.UserDAOImpl;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
@@ -23,6 +24,8 @@ public class DAOFactory {
                 return new PatientDAOImpl();
             case THERAPY_PROGRAM:
                 return new TherapyProgramsDAOImpl();
+            case USER:
+                return new UserDAOImpl();
             default:
                 return null;
         }

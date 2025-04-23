@@ -2,6 +2,7 @@ package lk.ijse.gdse72.serenityormcoursework.bo;
 
 import lk.ijse.gdse72.serenityormcoursework.bo.custom.impl.PatientsBOImpl;
 import lk.ijse.gdse72.serenityormcoursework.bo.custom.impl.TherapyProgramsBOImpl;
+import lk.ijse.gdse72.serenityormcoursework.bo.custom.impl.UserBOImpl;
 
 public class BOFactory {
     private static BOFactory boFactory;
@@ -25,6 +26,8 @@ public class BOFactory {
                 return (T) new PatientsBOImpl();
             case THERAPY_PROGRAM:
                 return (T) new TherapyProgramsBOImpl();
+            case USER:
+                return (T) new UserBOImpl();
             default:
                 return null;
         }
